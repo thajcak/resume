@@ -3,306 +3,228 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/css-doodle@0.12.2/css-doodle.min.js"></script>
+        <!-- <script src="https://unpkg.com/css-doodle@0.12.2/css-doodle.min.js"></script> -->
 
         <title>Thomas Hajcak</title>
     </head>
 
     <style>
         body {
-            background: #09203f;
-        }
-        .background {
-            height: 100vh;
-            width: 100vw;
-            position: fixed;
-            z-index: -1;
-
-            
-            background: linear-gradient(130deg, #09203f 60%, #537895 90%);
-            min-height: 100vh;
+            background-color: steelblue;
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
         }
 
         .card {
             background-color: rgba(255, 255, 255, .85);
             border-radius: 0;
         }
-        
-        .accordion-button,
-        .accordion-button:not(.collapsed) {
-            // background-color: rgb(210, 180,140);
+
+        .page {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            min-width: 100%;
+            max-width: 100vw;
+            min-height: calc(100vh - 16px);
+            border-top: 16px solid steelblue;
+            background-color: white;
         }
 
-        .row {
-            padding-top: 2em;
+        .header {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 300;
+            width: 95vw;
+            text-transform: uppercase;
         }
+
+        .header .name {
+            font-size: 4rem;
+            padding: 4rem 0 1rem;
+        }
+
+        .header .social {
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: row;
+            min-width: 100%;
+            justify-content: center;
+        }
+
+        .header .social > span {
+            margin: 0 2rem;
+        }
+
+        .content {
+
+        }
+
     </style>
 
     <body>
-        <div class="background">
-            <css-doodle>
-                @grid: 1x32 / 50%;
+        <div class="page">
+            <div class="header">
+                <div class="name" />
+                    Thomas Hajcak
+                </div>
+                <hr/>
+                Senior Salesforce Engineer
+                <hr/>
+                <div class="social">
+                    <span>LinkedIn</span>
+                    <span>Twitter</span>
+                </div>
+                <hr/>
+            </div>
 
-                @place-cell: center;
-                @size: calc(@i * 10%);
+            <div class="content">
+                <div class="summary">
+                    <p>
+                        Implementing custom solutions from concept to deployment on the Salesforce platform.
+                    </p>
+                    <p>
+                        Passionate about the Apple iOS ecosystem, crafting well thought out user experiences, and understanding modern UI best practices.
+                    </p>
+                </div>
+                <div class="experience">
+                    <h2>Employment</h2>
 
-                border-radius: 50%;
-                border-style: dashed;
-                border-width: calc(@i * 4px);
-                border-color: hsla(
-                calc(20 * @i), 70%, 68%,
-                calc(3 / @i * .8)
-                );
+                    <div class="panel">
+                        <h3>Compass</h3>
+                        <p>Sr Salesforce Engineer</p>
+                        <span>Since August '20</span>
+                    </div>
 
-                transform: rotate(@r(360deg));
-            </css-doodle>
+                    <div class="panel">
+                        <h3>Mavens</h3>
+                        <p>Technical Architect</p>
+                        <span>March '11 - August '20</span>
+                        <ul>
+                            <li>Owning the full development life cycle of projects in the life sciences industry including commercial pharmaceutical operations and patient programs.</li>
+                            <li>Leading technical teams through full development of projects with timeframes ranging from three to eighteen months and multiple phases.</li>
+                            <li>Designing and implementing public and private customer facing communities that drive user engagement, self service functionality, and information distribution.</li>
+                            <li>Managing and enhancing multiple React+Redux web applications.</li>
+                            <li>Crafting data consolidation processes for syncing and consumption.</li>
+                            <li>Determining scope, effort, and timeline for project requirements.</li>
+                            <li>Authoring documentation on both technical and administrative aspects of implemented solutions.</li>
+                            <li>Working directly with clients to gather requirements, approve visual and technical designs, and showcase solutions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>myYearbook</h3>
+                        <p>iPhone Developer</p>
+                        <span>July '10 - March '11</span>
+                        <ul>
+                            <li>Developing new apps and features that integrate directly with the website.</li>
+                            <li>Maintaining existing features, fixing various issues, and investigating crashes.</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h3>myYearbook</h3>
+                        <p>Sr QA Analyst &amp; Tester</p>
+                        <span>June '08 - July '10</span>
+                        <ul>
+                            <li>Testing and verifying live and preproduction web applications.</li>
+                            <li>Evaluating user feedback for problems and enhancements.</li>
+                            <li>Thoroughly vetting new applications in development.</li>
+                            <li>Maintaining catalog of known bugs and issues.</li>
+                            <li>Compiling recommendations for UI and UX adjustments.</li>
+                            <li>Authoring and maintaining testing documentation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+            <div class="content">
+                <div class="listing">
+                    <div class="panel">
+                        <p>
+                            Implementing custom solutions from concept to deployment on the Salesforce platform.
+                        </p>
+                        <p>
+                            Passionate about the Apple iOS ecosystem, crafting well thought out user experiences, and understanding modern UI best practices.
+                        </p>
+                    </div>
+
+                    <div class="panel">
+                        <h2>Speaking Events</h2>
+                        <p>2019 North American Veeva Customer Summit</p>
+                        <p>Presented best practiced on building data visualizations for the life science industry.</p>
+                    </div>
+
+                    <div class="panel">
+                        <h2>Employment</h2>
+
+                        <div class="panel">
+                            <h3>Compass</h3>
+                            <p>Sr Salesforce Engineer</p>
+                            <span>Since August '20</span>
+                        </div>
+
+                        <div class="panel">
+                            <h3>Mavens</h3>
+                            <p>Technical Architect</p>
+                            <span>March '11 - August '20</span>
+                            <ul>
+                                <li>Owning the full development life cycle of projects in the life sciences industry including commercial pharmaceutical operations and patient programs.</li>
+                                <li>Leading technical teams through full development of projects with timeframes ranging from three to eighteen months and multiple phases.</li>
+                                <li>Designing and implementing public and private customer facing communities that drive user engagement, self service functionality, and information distribution.</li>
+                                <li>Managing and enhancing multiple React+Redux web applications.</li>
+                                <li>Crafting data consolidation processes for syncing and consumption.</li>
+                                <li>Determining scope, effort, and timeline for project requirements.</li>
+                                <li>Authoring documentation on both technical and administrative aspects of implemented solutions.</li>
+                                <li>Working directly with clients to gather requirements, approve visual and technical designs, and showcase solutions.</li>
+                            </ul>
+                        </div>
+
+                        <div class="panel">
+                            <h3>myYearbook</h3>
+                            <p>iPhone Developer</p>
+                            <span>July '10 - March '11</span>
+                            <ul>
+                                <li>Developing new apps and features that integrate directly with the website.</li>
+                                <li>Maintaining existing features, fixing various issues, and investigating crashes.</li>
+                            </ul>
+                        </div>
+
+                        <div class="panel">
+                            <h3>myYearbook</h3>
+                            <p>Sr QA Analyst &amp; Tester</p>
+                            <span>June '08 - July '10</span>
+                            <ul>
+                                <li>Testing and verifying live and preproduction web applications.</li>
+                                <li>Evaluating user feedback for problems and enhancements.</li>
+                                <li>Thoroughly vetting new applications in development.</li>
+                                <li>Maintaining catalog of known bugs and issues.</li>
+                                <li>Compiling recommendations for UI and UX adjustments.</li>
+                                <li>Authoring and maintaining testing documentation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
 
-        <div class="container-md pb-5" style="max-width: 768px;">
-            <div class="row">
-                <div class="col">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <h1 class="card-title">Thomas Hajcak</h1>
-                            <h5 class="card-subtitle mb-2 text-muted">Sr Salesforce Engineer @ Compass</h5>
 
-                            <div class="card mt-4 shadow">
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        Implementing custom solutions from concept to deployment on the Salesforce platform.
-                                    </p>
-                                    <p class="card-text">
-                                        Passionate about the Apple iOS ecosystem, crafting well thought out user experiences, and understanding modern UI best practices.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- <div class="container-fluid">
+            <div class="background">
+                
             </div>
 
             <div class="row">
-                <div class="col">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <h3 class="card-title">Presentations</h3>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    2019 North American Veeva Customer Summit
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Presented best practiced on building data visualizations for the life science industry.</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col sidebar">
+                    <div class="sidebarcontent">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis, velit a euismod aliquet, libero mi suscipit lectus, vel luctus est libero a ipsum. Etiam tristique quam non rhoncus porta. Suspendisse rutrum nunc nec nibh rhoncus porta nec sed diam. Aliquam leo ipsum, rutrum non ornare ut, dapibus in odio. Aliquam eget dolor sit amet nibh pharetra interdum. Duis ut velit ligula. Cras nec ex eu eros malesuada fermentum. Etiam semper consectetur nulla, eu commodo elit vestibulum eu. Etiam ornare neque ante, quis aliquam orci tempor vel. Morbi orci nulla, elementum in congue vel, placerat at nibh. Aenean semper orci non lorem venenatis maximus. Ut arcu libero, mollis iaculis tincidunt in, bibendum ac tellus. Aliquam eget suscipit mauris, eu imperdiet metus.
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <h3 class="card-title">Employment</h3>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    Compass
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-body">
-                                        Sr Salesforce Engineer
-                                        <span class="badge bg-secondary float-end">Since August '20</span>
-                                    </h5>
-                                    <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed felis turpis, sollicitudin vel justo ut, convallis dictum ante. Nam nisi velit, cursus at neque eu, tristique consectetur arcu. Nulla imperdiet lectus ut semper cursus. Aenean non eros quis risus pretium fermentum in porttitor odio. Suspendisse tempus purus at lectus interdum, et ullamcorper justo sodales. In scelerisque finibus leo, nec tempor odio. Curabitur semper elit vitae leo consequat pellentesque. Aliquam auctor lorem non eleifend tempus.</p> -->
-                                </div>
-                            </div>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    Mavens
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-body">
-                                        Technical Architect
-                                        <span class="badge bg-secondary float-end">March '11 - August '20</span>
-                                    </h5>
-                                    <p class="card-text">
-                                        <ul>
-                                            <li>Owning the full development life cycle of projects in the life sciences industry including commercial pharmaceutical operations and patient programs.</li>
-                                            <li>Leading technical teams through full development of projects with timeframes ranging from three to eighteen months and multiple phases.</li>
-                                            <li>Designing and implementing public and private customer facing communities that drive user engagement, self service functionality, and information distribution.</li>
-                                            <li>Managing and enhancing multiple React+Redux web applications.</li>
-                                            <li>Crafting data consolidation processes for syncing and consumption.</li>
-                                            <li>Determining scope, effort, and timeline for project requirements.</li>
-                                            <li>Authoring documentation on both technical and administrative aspects of implemented solutions.</li>
-                                            <li>Working directly with clients to gather requirements, approve visual and technical designs, and showcase solutions.</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    myYearbook
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-body">
-                                        iPhone Developer
-                                        <span class="badge bg-secondary float-end">July '10 - March '11</span>
-                                    </h5>
-                                    <p class="card-text">
-                                        <ul>
-                                            <li>Developing new apps and features that integrate directly with the website.</li>
-                                            <li>Maintaining existing features, fixing various issues, and investigating crashes.</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    myYearbook
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-body">
-                                        Sr QA Analyst &amp; Tester
-                                        <span class="badge bg-secondary float-end">June '08 - July '10</span>
-                                    </h5>
-                                    <p class="card-text">
-                                        <ul>
-                                            <li>Testing and verifying live and preproduction web applications.</li>
-                                            <li>Evaluating user feedback for problems and enhancements.</li>
-                                            <li>Thoroughly vetting new applications in development.</li>
-                                            <li>Maintaining catalog of known bugs and issues.</li>
-                                            <li>Compiling recommendations for UI and UX adjustments.</li>
-                                            <li>Authoring and maintaining testing documentation.</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <h3 class="card-title">Independent Experience</h3>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    Simple Ink
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-body">
-                                        Sole Proprietor
-                                        <span class="badge bg-secondary float-end">Since Feburary '13</span>
-                                    </h5>
-                                    <p class="card-text">
-                                        Indenpendent iOS Design and Development.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    Jackson Creek Software
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-body">
-                                        iOS Consultant
-                                        <span class="badge bg-secondary float-end">April '14 - October '14</span>
-                                    </h5>
-                                    <p class="card-text">
-                                        <ul>
-                                            <li>Provided knowledgeable assistance explaining app lifecycle.</li>
-                                            <li>Deep dives into push notifications, memory management, and storyboards.</li>
-                                            <li>Suggested best practices around interface consistency, user experience, legacy iOS support, and sharing options.</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <h3 class="card-title">Certifications</h3>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    Salesforce
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        Salesforce Certified Platform App Builder
-                                        <br/>
-                                        Salesforce Certified Platform Developer I
-                                        <br/>
-                                        Salesforce Certified Platform Developer II
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    Veeva
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        Veeva CRM Certified White Belt
-                                        <br/>
-                                        Veeva Vault Certified White Belt
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="card shadow-lg">
-                        <div class="card-body">
-                            <h3 class="card-title">Education</h3>
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    Bloomfield College
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        BA, Creative Arts &amp; Technology – Game Development, 2008
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card mt-4 shadow">
-                                <div class="card-header">
-                                    Warren County Community College
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        AS, Computer Science, 2005
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
     </body>
 </html>
