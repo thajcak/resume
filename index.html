@@ -3,70 +3,78 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
-
-        <!-- <script src="https://unpkg.com/css-doodle@0.12.2/css-doodle.min.js"></script> -->
-
         <title>Thomas Hajcak</title>
     </head>
 
     <style>
         body {
-            background-color: steelblue;
+            background-image: linear-gradient(90deg, #1e3c72 10%, #2a5298 90%);
             font-family: Helvetica, Arial, sans-serif;
             margin: 0;
         }
 
-        .card {
-            background-color: rgba(255, 255, 255, .85);
-            border-radius: 0;
+        a {
+            text-decoration: none;
+            color: darkblue;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .page {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: stretch;
-            min-width: 100%;
-            max-width: 100vw;
-            min-height: calc(100vh - 16px);
-            border-top: 16px solid steelblue;
-            background-color: white;
+            min-height: 100vh;
+        }
+
+        .divider {
+            overflow: hidden;
+            width: 100vw;
+            margin-bottom: -4px;
         }
 
         .header {
-            text-align: center;
+            background-color: white;
             font-size: 1.2rem;
             font-weight: 300;
-            width: 95vw;
-            text-transform: uppercase;
+            text-align: center;
+            padding: 1rem 0 0.5rem;
         }
 
         .header .name {
-            font-size: 4rem;
-            padding: 4rem 0 1rem;
+            text-transform: uppercase;
+            font-size: 3rem;
         }
 
-        .header .social {
-            font-size: 0.8rem;
+        .social {
+            background-color: white;
             display: flex;
             flex-direction: row;
-            min-width: 100%;
+            font-size: 0.8rem;
             justify-content: center;
+            padding: 0 0 1rem;
         }
 
-        .header .social > span {
-            margin: 0 2rem;
+        .social > a {
+            margin: 1rem 1rem 0;
+            height: 34px;
+            width: 34px;
         }
 
         .content {
-
+            padding: 0 2rem 1rem;
+            color: rgb(188,197,214);
         }
 
     </style>
 
     <body>
         <div class="page">
+            <div class="divider">
+                <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style="fill: #ffffff; width: 125%; height: 50px; transform: rotate(180deg) scaleX(-1);">
+                    <path d="M1200 120L0 16.48V0h1200v120z" />
+                </svg>
+            </div>
+
             <div class="header">
                 <div class="name" />
                     Thomas Hajcak
@@ -74,14 +82,6 @@
                 <hr/>
                 Senior Salesforce Engineer
                 <hr/>
-                <div class="social">
-                    <span>LinkedIn</span>
-                    <span>Twitter</span>
-                </div>
-                <hr/>
-            </div>
-
-            <div class="content">
                 <div class="summary">
                     <p>
                         Implementing custom solutions from concept to deployment on the Salesforce platform.
@@ -90,6 +90,19 @@
                         Passionate about the Apple iOS ecosystem, crafting well thought out user experiences, and understanding modern UI best practices.
                     </p>
                 </div>
+            </div>
+
+            <div class="divider">
+                <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style="fill: #ffffff; width: 150%; height: 100px;">
+                    <path d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z" opacity=".25"/>
+                    <path d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z" opacity=".5"/>
+                    <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+                </svg>
+            </div>
+
+            <div class="content">
+
+
                 <div class="experience">
                     <h2>Employment</h2>
 
@@ -139,6 +152,27 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div class="divider">
+                <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style="fill: #ffffff; width: 150%; height: 50px; transform: rotate(180deg);">
+                    <path d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z" opacity=".25"/>
+                    <path d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z" opacity=".5"/>
+                    <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z" />
+                </svg>
+            </div>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/thajcak/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382 382" style="enable-background:new 0 0 100 100;">
+                        <path style="fill:#0077B7;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889  C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056  H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806  c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1  s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73  c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079  c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426  c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472  L341.91,330.654L341.91,330.654z"/>
+                    </svg>
+                </a>
+                <a href="http://twitter.com/thajcak">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 232" style="enable-background:new 0 0 232 232;">
+                        <path style="fill:#3FA9F5;" d="M4.453,173.33c9.763-1.192,19.663,0.092,29.426-1.512c4.904-0.779,9.396-2.429,13.842-4.171   c-11-7.058-20.901-15.125-30.113-24.796c-3.3-3.438-0.917-9.213,3.896-9.35c3.942,0.183,7.792-0.137,11.55-0.917   c-9.58-12.146-17.005-25.209-22.78-39.876c-1.558-3.942,3.025-7.929,6.738-6.738c2.154,0.871,4.354,1.467,6.6,1.925   c-6.829-16.409-8.25-32.955-4.446-51.106c0.871-4.171,6.371-5.179,9.167-2.429c21.909,21.541,49.593,31.9,79.202,36.85   c-2.613-20.259,11.78-41.801,30.663-48.86c15.676-5.821,36.714-1.833,47.256,11.367c7.059-4.446,16.821-5.913,24.659-7.288   c4.125-0.688,8.113,3.346,5.684,7.425c-2.842,4.767-5.546,9.854-8.525,14.713c6.05-1.788,12.284-2.888,18.517-3.667   c4.492-0.596,7.196,6.325,3.759,9.075c-7.288,5.821-14.53,12.467-22.276,17.784c-0.229,51.472-15.263,94.649-61.235,123.937   c-38.319,24.477-109.546,20.352-142.867-12.97H3.124c-1.467-0.367-2.246-1.467-2.521-2.658c-1.283-1.925-0.367-4.308,1.329-5.225   C2.574,174.063,3.399,173.467,4.453,173.33z"/>
+                    </svg>
+                </a>
             </div>
 
             <!-- 
