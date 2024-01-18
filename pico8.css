@@ -1,0 +1,19 @@
+body {
+    background-image: linear-gradient(90deg, #7950f2 5%, #f783ac 95%);
+}
+
+.divider {
+    overflow: hidden;
+    width: 100vw;
+    margin-bottom: 0px;
+}
+
+.divider svg {
+    fill: #ffffff; 
+    width: 100%; 
+    height: 15px; 
+}
+
+img {
+    height: 300px
+}

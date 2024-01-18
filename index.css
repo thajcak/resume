@@ -1,0 +1,12 @@
+body {
+    background-image: linear-gradient(270deg, #4b6cb7 10%, #23375f 90%);
+}
+
+.section-colored {
+    color: rgb(198,207,224);
+}
+.section-plain {
+    background-color: white;
+    padding: 1rem 0;
+    color: rgb(20, 20, 20);
+}
