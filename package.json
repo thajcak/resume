@@ -1,6 +1,6 @@
 {
-  "name": "new-resume",
-  "homepage": "https://thomashajcak.com",
+  "name": "resume",
+  "homepage": "https://www.thomashajcak.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
