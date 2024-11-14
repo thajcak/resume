@@ -1,3 +1,15 @@
+require('@babel/register')({
+  presets: [
+    '@babel/preset-env',
+    '@babel/preset-react',
+    '@babel/preset-typescript'
+  ],
+  plugins: [
+    'babel-plugin-css-modules-transform'
+  ],
+  extensions: ['.ts', '.tsx']
+});
+
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
 const fs = require('fs-extra');
