@@ -14,6 +14,7 @@ const React = require('react');
 const ReactDOMServer = require('react-dom/server');
 const fs = require('fs-extra');
 const path = require('path');
+const prettier = require('prettier');
 const App = require('../src/App').default;
 
 async function buildStatic() {
@@ -30,11 +31,21 @@ async function buildStatic() {
     `<div id="root">${html}</div>`
   );
   
-  // Ensure build directory exists
-  await fs.ensureDir('./build');
+  // Read CSS files
+  const globalCss = await fs.readFile(path.resolve(__dirname, '../src/styles/global.css'), 'utf8');
+  const indexCss = await fs.readFile(path.resolve(__dirname, '../src/styles/index.css'), 'utf8');
   
+  // Add CSS to head
+  const withCss = finalHtml.replace(
+    '</head>',
+    `<style>${globalCss}${indexCss}</style></head>`
+  );
+
+  // Format HTML
+  const formattedHtml = await prettier.format(withCss, { parser: 'html' });
+
   // Write the final HTML
-  await fs.writeFile('./build/index.html', finalHtml);
+  await fs.writeFile('./build/index.html', formattedHtml);
   
   // Copy other necessary assets
   await fs.copy('./public', './build', {
