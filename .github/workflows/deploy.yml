@@ -31,7 +31,7 @@ jobs:
         env:
           PUBLIC_URL: ''
 
-      - name: Debug directory
+      - name: Debug directory?
         run: ls -la
 
       - name: Setup Pages
