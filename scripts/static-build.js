@@ -44,6 +44,9 @@ async function buildStatic() {
   // Format HTML
   const formattedHtml = await prettier.format(withCss, { parser: 'html' });
 
+  // Ensure build directory exists
+  await fs.ensureDir('./build');
+
   // Write the final HTML
   await fs.writeFile('./build/index.html', formattedHtml);
   
