@@ -9,10 +9,13 @@ export const Header = () => {
       <hr/>
       <div className="summary">
         <p>
-          Creating custom Salesforce solutions and integrations
+          Designing and implementing custom solutions to business needs on the Salesforce platform
         </p>
         <p>
-          Passionate about crafting well thought out user experiences, understanding modern UI best practices, and exploring how AI can improve development workflows.
+          Enthusiastic about the potential of AI, especially to save time and effort in our daily lives
+        </p>
+        <p>
+          Passionate about user experience and user interface design in our everyday interactions with technology
         </p>
       </div>
     </div>
