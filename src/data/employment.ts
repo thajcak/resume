@@ -17,7 +17,7 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2023-02-01",
         responsibilities: [
           "Provides Salesforce platform expertise necessary to guide project requirement collection.",
-          "Translate technical client requirements into thoughful systems through code and integrations.",
+          "Translate technical client requirements into thoughtful systems through code and integrations.",
           "Collaborate with technical and non-technical teams to explain complex solutions in terms everyone can understand.",
           "Draft technical written materials to facilitate communication between clients and the delivery teams.",
           "Provides input and assist in building out Go-Live plans that allow clients to be successful post-engagement.",
