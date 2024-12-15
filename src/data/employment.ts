@@ -30,7 +30,7 @@ export const employmentData: EmploymentEntry[] = [
     company: "Compass",
     positions: [
       {
-        title: "Sr Salesforce Engineer",
+        title: "Engineering Manager",
         startDate: "2022-06-01",
         endDate: "2023-02-28",
         responsibilities: [
