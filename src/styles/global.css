@@ -93,8 +93,11 @@ h3 {
 }
 
 .header .name {
-    font-size: 200%;
+    font-size: 250%;
     text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid;
 }
 
 .header .title {
