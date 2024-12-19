@@ -3,32 +3,33 @@ import './styles/global.css';
 import './styles/index.css';
 import { Employment } from './components/Employment';
 import { Header } from './components/Header';
-import { Divider } from './components/Divider';
+import { Summary } from './components/Summary';
 import { Speaking } from './components/Speaking';
-import { Credentials } from './components/Credentials';
+import { Certifications } from './components/Certifications';
+import { Education } from './components/Education';
+import { Skills } from './components/Skills';
 
 function App() {
   return (
     <div className="page">
-      <Divider position="top" />
-
-      <div className="section-plain">
-        <div className="content-limiter">
-          <Header />
-        </div>
+      <div className="main-container">
+        <aside className="sidebar">
+          <div className="section-plain">
+            <Header />
+            <Summary />
+            <Certifications />
+            <Skills />
+            <Speaking />
+            <Education />
+          </div>
+        </aside>
+        
+        <main className="main-content">
+          <div className="section-plain">
+            <Employment />
+          </div>
+        </main>
       </div>
-
-      <Divider position="bottom" />
-
-      <Employment />
-
-      <Divider position="top" />
-
-      <Speaking />
-
-      <Divider position="bottom" />
-
-      <Credentials />
     </div>
   );
 }

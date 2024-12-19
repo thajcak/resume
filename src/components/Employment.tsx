@@ -1,5 +1,7 @@
 import React from 'react';
 import { employmentData } from '../data/employment';
+import { SectionHeader } from './SectionHeader';
+import { BulletList } from './templates/BulletList';
 
 export const Employment = () => {
   const formatDate = (date: string) => {
@@ -7,36 +9,24 @@ export const Employment = () => {
   };
 
   return (
-    <div className="section-colored">
-      <div className="content-limiter">
-        <div className="content">
-          <h2>Employment</h2>
-          <hr/>
-
-          {employmentData.map((entry, index) => (
-            <div key={index} className="entry-row">
-              <h3>{entry.company}</h3>
-              {entry.positions.map((position, posIndex) => (
-                <React.Fragment key={posIndex}>
-                  <div className="entry-subtitle">
-                    {position.title}
-                    <span className="entry-detail">
-                      {position.endDate 
-                        ? `${formatDate(position.startDate)} - ${formatDate(position.endDate)}`
-                        : `Since ${formatDate(position.startDate)}`}
-                    </span>
-                  </div>
-                  <ul>
-                    {position.responsibilities.map((responsibility, respIndex) => (
-                      <li key={respIndex}>{responsibility}</li>
-                    ))}
-                  </ul>
-                </React.Fragment>
-              ))}
-            </div>
+    <div>
+      {employmentData.map((entry, index) => (
+        <div key={index} className="entry-row">
+          <SectionHeader title={entry.company} />
+          {entry.positions.map((position, posIndex) => (
+            <React.Fragment key={posIndex}>
+              <SectionHeader 
+                subtitle={position.title}
+                detail={position.endDate 
+                  ? `${formatDate(position.startDate)} - ${formatDate(position.endDate)}`
+                  : `Since ${formatDate(position.startDate)}`
+                }
+              />
+              <BulletList items={position.responsibilities} />
+            </React.Fragment>
           ))}
         </div>
-      </div>
+      ))}
     </div>
   );
 };
