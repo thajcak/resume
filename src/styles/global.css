@@ -194,6 +194,22 @@ li::before {
     color: #666;
 }
 
+/* Pill styles */
+.pill {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin: 0.3rem 0.3rem 0.3rem 0;
+    font-size: 0.8rem;
+}
+
+.subtitle {
+    font-size: 90%;
+    opacity: 0.7;
+    margin: 0.5rem 0;
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     .main-container {
@@ -236,7 +252,7 @@ li::before {
     }
 
     .pill {
-        background: #333;
+        background: rgba(0, 0, 0, 0.35);
     }
 
     .subtitle {
@@ -268,21 +284,7 @@ li::before {
     }
 }
 
-/* Pill styles */
-.pill {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.05);
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    margin: 0.3rem 0.3rem 0.3rem 0;
-    font-size: 0.8rem;
-}
 
-.subtitle {
-    font-size: 90%;
-    opacity: 0.7;
-    margin: 0.5rem 0;
-}
 
 @keyframes gradient-move {
     0% {
