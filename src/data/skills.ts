@@ -5,27 +5,35 @@ export interface SkillEntry {
 
 export const skillData: SkillEntry[] = [
   {
-    type: "Salesforce",
-    skills: ["Apex", "Lightning Web Components"]
+    type: "Salesforce Technologies",
+    skills: ["Apex", "Apex REST", "Lightning Web Components", "Platform Cache", "Platorm Events", "SFDX"]
   },
   {
-    type: "Frameworks",
-    skills: ["Trigger Handler", "Platform Events"]
+    type: "Web Technologies",
+    skills: ["CSS", "HTML", "JS", "JSON", "React", "REST", "SOAP", "XML"]
   },
   {
-    type: "Patterns",
-    skills: ["Batch Processing", "Asynchronous Processing"]
+    type: "Design Patterns",
+    skills: ["Asynchronous Processing", "Batch Processing", "Event Driven Architecture", "Integration Design", "Trigger Handler"]
   },
   {
-    type: "Design",
-    skills: ["User Interface", "User Experience"]
+    type: "Interface Design",
+    skills: ["Mockup Design", "Salesforce Lightning Design System", "User Experience", "User Interface", "UX Testing"]
   },
   {
-    type: "Web Development",
-    skills: ["HTML", "CSS", "JS", "REST", "JSON"]
+    type: "Development Lifecycle",
+    skills: ["CI/CD", "Gearset", "Git", "GitHub Actions", "NPM", "YAML"]
   },
   {
-    type: "Lifecycle",
-    skills: ["Git", "SFDX", "CI/CD", "GitHub Actions", "Gearset"]
-  }
+    type: "Project Management",
+    skills: ["ClickUp", "Figma", "Google Workspace", "Jira", "Miro", "Slack"]
+  },
+  {
+    type: "Tools",
+    skills: ["1Password", "ChatGPT", "Cursor", "Fork", "Illuminated Cloud", "IntelliJ", "Postman", "VSCode"]
+  },
+  {
+    type: "Salesforce Clouds",
+    skills: ["Experience Cloud", "Financial Services Cloud", "Sales Cloud", "Service Cloud"]
+  },
 ];

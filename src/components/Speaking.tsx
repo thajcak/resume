@@ -5,7 +5,7 @@ export const Speaking = () => {
   const speakingEvents = [
     {
       title: "2019 North American Veeva Customer Summit",
-      subtitle: "Presented best practices on building data visualizations for the life science industry."
+      subtitle: "Presented on best practices for building data visualizations in the life sciences industry."
     }
   ];
 

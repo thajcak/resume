@@ -82,7 +82,7 @@ h3 {
     padding: 1rem 0;
 }
 
-.content + .content {
+.content {
     padding-top: 2rem;
 }
 
@@ -210,6 +210,66 @@ li::before {
     margin: 0.5rem 0;
 }
 
+
+.title-sub-entry {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.title-sub-entry + .subtitle {
+    margin-top: 0.25rem;
+}
+
+/* External links section */
+.external-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.external-link img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.external-link:hover img {
+    opacity: 1;
+}
+
+/* Split List Component Styles */
+.split-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0.5rem 0;
+}
+  
+.split-left {
+    flex: 1;
+}
+  
+.split-right {
+    text-align: right;
+    opacity: 0.7;
+    font-size: 90%;
+}
+  
+  /* Title Sub List Component Styles */
+.entry-row h3 {
+    margin: 1rem 0 0.25rem 0;
+    font-size: 110%;
+}
+  
+.entry-row .subtitle {
+    margin-bottom: 1rem;
+}
+  
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     .main-container {
@@ -263,6 +323,14 @@ li::before {
         border-bottom-color: #aaa;
     }
 
+    .split-right {
+        color: #aaa;
+      }
+    
+    .external-link img {
+        filter: brightness(0) invert(1);
+    }
+
 }
 
 /* Mobile responsive */
@@ -282,6 +350,14 @@ li::before {
     .sidebar::after {
         display: none;
     }
+
+    .split-row {
+        flex-direction: column;
+      }
+      
+    .split-right {
+        text-align: left;
+    }
 }
 
 
@@ -293,57 +369,4 @@ li::before {
     100% {
         background-position: -1000vw 50%;
     }
-}
-
-/* Split List Component Styles */
-.split-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: 0.5rem 0;
-}
-
-.split-left {
-  flex: 1;
-}
-
-.split-right {
-  text-align: right;
-  opacity: 0.7;
-  font-size: 90%;
-}
-
-/* Title Sub List Component Styles */
-.entry-row h3 {
-  margin: 1rem 0 0.25rem 0;
-  font-size: 110%;
-}
-
-.entry-row .subtitle {
-  margin-bottom: 1rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .split-right {
-    color: #aaa;
-  }
-}
-
-@media (max-width: 600px) {
-  .split-row {
-    flex-direction: column;
-  }
-  
-  .split-right {
-    text-align: left;
-  }
-}
-
-.title-sub-entry {
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
-
-.title-sub-entry + .subtitle {
-  margin-top: 0.25rem;
 }
