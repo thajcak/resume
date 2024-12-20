@@ -1,29 +1,5 @@
 import React from 'react';
-
-interface ExternalLink {
-  url: string;
-  imageUrl: string;
-  alt: string;
-}
-
-const externalLinks: ExternalLink[] = [
-  {
-    url: 'https://www.github.com/thajcak',
-    imageUrl: '/images/github.png',
-    alt: 'GitHub Profile'
-  },
-  {
-    url: 'https://www.linkedin.com/in/thajcak',
-    imageUrl: '/images/linkedin.png',
-    alt: 'LinkedIn Profile'
-  },
-  {
-    url: 'https://www.salesforce.com/trailblazer/thajcak',
-    imageUrl: '/images/salesforce.png',
-    alt: 'Trailblazer Profile'
-  }
-  // Add more external links as needed
-];
+import { externalLinks } from '../data/external-links';
 
 export const Header = () => {
   return (
