@@ -31,17 +31,13 @@ h3 {
 .page {
     min-height: 100vh;
     padding: 2rem;
-    background: linear-gradient(
-        270deg,
-        #6c4bb7,
-        #b74b6c,
-        #b76c4b,
-        #4bb76c,
-        #4b6cb7,
-        #6c4bb7
-    );
-    background-size: 1000vw 100%;
-    animation: gradient-move 180s linear infinite;
+    background: hsl(0 50% 50%);
+    animation: hue-rotate 180s linear infinite;
+}
+
+@keyframes hue-rotate {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(360deg); }
 }
 
 .main-container {
@@ -357,16 +353,5 @@ li::before {
       
     .split-right {
         text-align: left;
-    }
-}
-
-
-
-@keyframes gradient-move {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: -1000vw 50%;
     }
 }
