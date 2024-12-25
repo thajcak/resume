@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles/global.css';
-import './styles/index.css';
 import { Employment } from './components/Employment';
 import { Header } from './components/Header';
 import { Summary } from './components/Summary';
@@ -14,20 +13,16 @@ function App() {
     <div className="page">
       <div className="main-container">
         <aside className="sidebar">
-          <div className="section-plain">
-            <Header />
-            <Summary />
-            <Certifications />
-            <Skills />
-            <Speaking />
-            <Education />
-          </div>
+          <Header />
+          <Summary />
+          <Certifications />
+          <Skills />
         </aside>
         
         <main className="main-content">
-          <div className="section-plain">
-            <Employment />
-          </div>
+          <Employment />
+          <Speaking />
+          <Education />
         </main>
       </div>
     </div>

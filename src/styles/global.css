@@ -2,16 +2,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
-}
-
-/* Typography */
-a {
-    text-decoration: none;
-    color: darkblue;
-}
-
-a:hover {
-    text-decoration: underline;
+    color: black;
 }
 
 h2 {
@@ -31,7 +22,7 @@ h3 {
 .page {
     min-height: 100vh;
     padding: 2rem;
-    background: hsl(0 50% 50%);
+    background: hsl(151, 50%, 50%);
     animation: hue-rotate 180s linear infinite;
 }
 
@@ -75,11 +66,7 @@ h3 {
 
 /* Content areas */
 .content {
-    padding: 1rem 0;
-}
-
-.content {
-    padding-top: 2rem;
+    padding: 2rem 0 1rem;
 }
 
 /* Header styles */
@@ -112,13 +99,10 @@ h3 {
     margin-top: 3rem;
 }
 
-/* Employment entry styles */
 .item-header {
     text-transform: uppercase;
     font-size: 150%;
-    /* padding-bottom: 0.25rem; */
     margin-bottom: 0.25rem;
-    /* border-bottom: 1px solid; */
 }
 
 .section-header {
@@ -130,9 +114,7 @@ h3 {
     position: relative;
     padding-bottom: 0.25rem;
     margin-bottom: 0.25rem;
-    /* margin-top: 0.5rem; */
     font-weight: 300;
-    /* border-bottom: 1px solid; */
 }
 
 .title-underline {
@@ -187,7 +169,6 @@ li::before {
     content: "\027A4";
     position: absolute;
     left: -1.5rem;
-    color: #666;
 }
 
 /* Pill styles */
@@ -268,60 +249,21 @@ li::before {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    .main-container {
-        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    body {
+        color: rgba(255, 255, 255, 0.85);
     }
 
     .sidebar {
-        background: rgba(26, 26, 26, 0.7);
-        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
     }
 
     .main-content {
-        background: rgb(26, 26, 26);
-        color: #fff;
-    }
-
-    .title-underline {
-        background: #404040;
-    }
-
-    a {
-        color: #7aa2f7;
-    }
-
-    .header .sub-title {
-        color: #aaa;
-    }
-
-    .entry-detail {
-        color: #aaa;
-    }
-
-    h2,
-    .entry-subtitle {
-        border-bottom-color: #aaa;
-    }
-
-    li::before {
-        color: #999;
+        background: rgba(0, 0, 0, 0.9);
     }
 
     .pill {
         background: rgba(0, 0, 0, 0.35);
     }
-
-    .subtitle {
-        color: #aaa;
-    }
-
-    .item-header {
-        border-bottom-color: #aaa;
-    }
-
-    .split-right {
-        color: #aaa;
-      }
     
     .external-link img {
         filter: brightness(0) invert(1);
@@ -341,10 +283,6 @@ li::before {
 
     .sidebar {
         max-width: 100%;
-    }
-
-    .sidebar::after {
-        display: none;
     }
 
     .split-row {
