@@ -16,13 +16,13 @@ function App() {
           <Header />
           <Summary />
           <Certifications />
-          <Skills />
+          <Speaking />
+          <Education />
         </aside>
         
         <main className="main-content">
           <Employment />
-          <Speaking />
-          <Education />
+          <Skills />
         </main>
       </div>
     </div>

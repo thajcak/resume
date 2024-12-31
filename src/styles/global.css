@@ -22,8 +22,20 @@ h3 {
 .page {
     min-height: 100vh;
     padding: 2rem;
+    position: relative;
+    z-index: 0;
+}
+
+.page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: hsl(151, 50%, 50%);
     animation: hue-rotate 180s linear infinite;
+    z-index: -1;
 }
 
 @keyframes hue-rotate {
@@ -269,6 +281,10 @@ li::before {
         filter: brightness(0) invert(1);
     }
 
+    .certification-image {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
 }
 
 /* Mobile responsive */
@@ -292,4 +308,59 @@ li::before {
     .split-right {
         text-align: left;
     }
+}
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.certification-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  transition: transform 0.2s ease-in-out;
+  cursor: help;
+}
+
+.certification-image:hover {
+  transform: scale(1.02);
+}
+
+.certification-image img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  transition: filter 0.2s ease-in-out;
+}
+
+.certification-image:hover img {
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.2));
+}
+
+@media (prefers-color-scheme: dark) {
+  .certification-image img {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+  }
+  
+  .certification-image:hover img {
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.4));
+  }
+}
+
+.certification-info {
+  text-align: center;
+}
+
+.certification-title {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.certification-date {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }

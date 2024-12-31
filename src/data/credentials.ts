@@ -3,6 +3,7 @@ export interface CertificationEntry {
   certifications: {
     title: string;
     date: string;
+    image: string;
   }[];
 }
 
@@ -17,20 +18,19 @@ export const certificationData: CertificationEntry[] = [
     organization: "Salesforce",
     certifications: [
       {
-        title: "Force.com Developer",
-        date: "2011-07-07"
-      },
-      {
         title: "Platform App Builder",
-        date: "2016-01-01"
+        date: "2016-01-01",
+        image: "/images/2021-03_Badge_SF-Certified_Platform-App-Builder_High-Res.png"
       },
       {
         title: "Platform Developer I",
-        date: "2016-02-01"
+        date: "2016-02-01",
+        image: "/images/2021-03_Badge_SF-Certified_Platform-Developer-I_High-Res.png"
       },
       {
         title: "Platform Developer II",
-        date: "2017-07-01"
+        date: "2017-07-01",
+        image: "/images/2021-03_Badge_SF-Certified_Platform-Developer-II_High-Res.png"
       }
     ]
   }
