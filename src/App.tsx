@@ -22,8 +22,10 @@ function App() {
         
         <main className="main-content">
           <Employment />
-          <Skills />
         </main>
+      </div>
+      <div className="skills-container">
+        <Skills />
       </div>
     </div>
   );

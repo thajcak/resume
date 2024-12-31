@@ -11,13 +11,13 @@ export const externalLinks: ExternalLink[] = [
     alt: 'GitHub Profile'
   },
   {
-    url: 'https://www.linkedin.com/in/thajcak',
-    imageUrl: '/images/linkedin.png',
-    alt: 'LinkedIn Profile'
-  },
-  {
     url: 'https://www.salesforce.com/trailblazer/thajcak',
     imageUrl: '/images/salesforce.png',
     alt: 'Trailblazer Profile'
+  },
+  {
+    url: 'https://www.linkedin.com/in/thajcak',
+    imageUrl: '/images/linkedin.png',
+    alt: 'LinkedIn Profile'
   }
 ]; 

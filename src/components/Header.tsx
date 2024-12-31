@@ -16,6 +16,7 @@ export const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="external-link"
+            title={link.alt}
           >
             <img src={link.imageUrl} alt={link.alt} />
           </a>

@@ -20,9 +20,16 @@ export const Certifications = () => {
       <SectionHeader title="Certifications" />
       <div className="certification-grid">
         {images.map((image, index) => (
-          <div key={index} className="certification-image" title={`${image.title} - ${image.date}`}>
+          <a 
+            key={index}
+            href="https://www.salesforce.com/trailblazer/thajcak"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="certification-image"
+            title={`${image.title} - ${image.date}`}
+          >
             <img src={image.src} alt={image.title} />
-          </div>
+          </a>
         ))}
       </div>
     </div>
