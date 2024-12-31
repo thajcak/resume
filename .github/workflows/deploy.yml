@@ -31,8 +31,11 @@ jobs:
         env:
           PUBLIC_URL: ''
 
-      - name: Debug directory?
-        run: ls -la
+      - name: Debug build directory
+        run: |
+          pwd
+          ls -la
+          ls -la build || echo "build directory not found"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
