@@ -2,7 +2,7 @@ name: Deploy React App to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ]  # Or your default branch name
   workflow_dispatch:
 
 permissions:
@@ -20,22 +20,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '20'  # Or your preferred Node version
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build static site
-        run: |
-          npm run build:static
-          cp -r public/images build/images
+      - name: Build React app
+        run: npm run build:static
+        env:
+          PUBLIC_URL: ''
 
-      - name: Debug build directory
-        run: |
-          pwd
-          ls -la
-          ls -la build || echo "build directory not found"
+      - name: Debug directory?
+        run: ls -la
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -52,6 +49,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy React App to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4 
