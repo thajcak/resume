@@ -25,7 +25,7 @@ function App() {
         </main>
       </div>
       <div className="skills-container">
-        <Skills />
+          <Skills />
       </div>
     </div>
   );
