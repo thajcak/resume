@@ -33,7 +33,6 @@ async function buildStatic() {
   
   // Read CSS files
   const globalCss = await fs.readFile(path.resolve(__dirname, '../src/styles/global.css'), 'utf8');
-  const indexCss = await fs.readFile(path.resolve(__dirname, '../src/styles/index.css'), 'utf8');
   
   // Add CSS to head
   const withCss = finalHtml.replace(
