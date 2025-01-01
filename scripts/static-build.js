@@ -37,7 +37,7 @@ async function buildStatic() {
   // Add CSS to head
   const withCss = finalHtml.replace(
     '</head>',
-    `<style>${globalCss}${indexCss}</style></head>`
+    `<style>${globalCss}</style></head>`
   );
 
   // Format HTML
