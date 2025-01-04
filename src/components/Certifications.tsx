@@ -28,7 +28,7 @@ export const Certifications = () => {
             className="certification-image"
             title={`${image.title} - ${image.date}`}
           >
-            <img src={image.src} alt={image.title} />
+            <img className="reactive-image" src={image.src} alt={image.title} />
           </a>
         ))}
       </div>
