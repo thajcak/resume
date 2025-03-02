@@ -31,6 +31,11 @@ export const certificationData: CertificationEntry[] = [
         title: "Platform Developer II",
         date: "2017-07-01",
         image: "/images/2021-03_Badge_SF-Certified_Platform-Developer-II_High-Res.png"
+      },
+      {
+        title: "AI Specialist",
+        date: "2025-03-01",
+        image: "/images/2024-06_Badge_SF-Certified_AI-Specialist_High-Res.png"
       }
     ]
   }
