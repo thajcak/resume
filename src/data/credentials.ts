@@ -33,9 +33,9 @@ export const certificationData: CertificationEntry[] = [
         image: "/images/2021-03_Badge_SF-Certified_Platform-Developer-II_High-Res.png"
       },
       {
-        title: "AI Specialist",
+        title: "Agentforce Specialist",
         date: "2025-03-01",
-        image: "/images/2024-06_Badge_SF-Certified_AI-Specialist_High-Res.png"
+        image: "/images/2025-02_Badge_SF-Certified_Agentforce-Specialist_High-Res.png"
       }
     ]
   }
