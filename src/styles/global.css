@@ -297,7 +297,11 @@ img.reactive-image:hover {
     }
     
     .pill {
-        background: rgba(0, 0, 0, 0.35);
+        background: rgba(255, 255, 255, 0.15);
+    }
+    
+    .skills-container .pill {
+        background: rgba(255, 255, 255, 0.15);
     }
     
     .skills-container .main-content {
@@ -365,9 +369,4 @@ img.reactive-image:hover {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-}
-
-.skills-container .main-content {
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.95);
 }
