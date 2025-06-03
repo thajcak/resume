@@ -10,11 +10,29 @@ export interface EmploymentEntry {
 
 export const employmentData: EmploymentEntry[] = [
   {
+    company: "Epic Games",
+    positions: [
+      {
+        title: "Senior Salesforce Developer",
+        startDate: "2025-06-01",
+        responsibilities: [
+          "Technical Design/Solutioning of Stories/New Features",
+          "Manage overall system solution design",
+          "Oversee and maintain the overall system technical documentation",
+          "Enforce governance and security principles in the development lifecycle",
+          "Serve as technical architecture/support during business analysis phases and the overall Development Team",
+          "Develop best practices and standards for our code base and work to move our code base to better conform with those standards"
+        ]
+      }
+    ]
+  },
+  {
     company: "Stitch Consulting",
     positions: [
       {
         title: "Senior Technical Architect",
         startDate: "2023-02-01",
+        endDate: "2025-05-31",
         responsibilities: [
           "Provide Salesforce expertise to guide project requirements collection.",
           "Translate technical requirements into effective solutions and designs using code, configuration, and integrations.",
