@@ -16,12 +16,14 @@ export const employmentData: EmploymentEntry[] = [
         title: "Senior Salesforce Developer",
         startDate: "2025-06-01",
         responsibilities: [
-          "Technical Design/Solutioning of Stories/New Features",
-          "Manage overall system solution design",
-          "Oversee and maintain the overall system technical documentation",
-          "Enforce governance and security principles in the development lifecycle",
-          "Serve as technical architecture/support during business analysis phases and the overall Development Team",
-          "Develop best practices and standards for our code base and work to move our code base to better conform with those standards"
+          "Act as technical architect for both business analysts and the development team",
+          "Translating business requirements into scalable solutions",
+          "Drive technical design for both feature development and larger initiatives, ensuring performance, scalability, and maintainability",
+          "Lead a distributed development team ensuring code quality and solution accuracy",
+          "Own system stability and architecture, proactively identifying and resolving risks",
+          "Establish and maintain technical documentation to support long-term system health",
+          "Enforce governance, security, and best practices across the development lifecycle",
+          "Encourage continuous improvement of engineering standards and code quality through iterative enhancements"
         ]
       }
     ]
