@@ -16,7 +16,7 @@ export const employmentData: EmploymentEntry[] = [
         title: "Senior Salesforce Developer",
         startDate: "2025-06-01",
         responsibilities: [
-          "Act as technical architect for both business analysts and the development team",
+          "Act as technical architect for business analysts and the development team",
           "Translating business requirements into scalable solutions",
           "Drive technical design for both feature development and larger initiatives, ensuring performance, scalability, and maintainability",
           "Lead a distributed development team ensuring code quality and solution accuracy",
