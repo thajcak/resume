@@ -10,7 +10,20 @@
     />
 
     <title>Thomas Hajcak – Resume</title>
-    <script data-site="FHYZNUK" src="https://a.sleepypixel.monster/script.js" defer></script>
+    <script>
+      (function () {
+        var localHosts = ["localhost", "127.0.0.1"];
+        if (localHosts.indexOf(window.location.hostname) !== -1) {
+          return;
+        }
+
+        var script = document.createElement("script");
+        script.dataset.site = "FHYZNUK";
+        script.src = "https://a.sleepypixel.monster/script.js";
+        script.defer = true;
+        document.head.appendChild(script);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

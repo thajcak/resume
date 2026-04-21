@@ -13,7 +13,7 @@ export const skillData: SkillEntry[] = [
     skills: ["CSS", "HTML", "JS", "JSON", "React", "REST", "SOAP", "XML"]
   },
   {
-    type: "Design Patterns",
+    type: "Architectural Patterns",
     skills: ["Asynchronous Processing", "Batch Processing", "Event Driven Architecture", "Integration Design", "Trigger Handler"]
   },
   {
@@ -29,7 +29,7 @@ export const skillData: SkillEntry[] = [
     skills: ["ClickUp", "Figma", "Google Workspace", "Jira", "Miro", "Slack"]
   },
   {
-    type: "Tools",
+    type: "Tools & AI",
     skills: ["ChatGPT", "Claude Code", "Cursor", "Postman", "VSCode"]
   },
   {

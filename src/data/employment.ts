@@ -17,9 +17,9 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2025-06-01",
         endDate: "2025-03-24",
         responsibilities: [
-          "Re-architected Feedback and Question form frameworks serving 1k+ users weekly to improve scalability and maintainability, cutting component load time by ~50% and making future form changes more reliable and faster to deliver.",
+          "Re-architected Feedback and Question form frameworks serving 2k+ users montly to improve scalability and maintainability, cutting component load time by 50% and making future form changes more reliable and faster to deliver.",
           "Led security remediation design for community experiences by addressing 3 security findings in Q1 2026, involving LWC process control changes, and locking down Community profiles to reduce exposure for external and guest users.",
-          "Lead legacy Case trigger architecture redesign to bring modern practices, eliminating years of technical debt and increasing performance by ~80% during Case operations.",
+          "Lead legacy Case trigger architecture redesign to bring modern practices, eliminating years of technical debt and increasing performance by 80% during Case operations.",
           "Served as technical architect across as many as 5 concurrent projects, partnering with 2 BAs and 1-2 developers per engagement to drive code quality and functional readiness prior to BA validation.",
           "Built an AI-assisted codebase analysis workflow to infer and backfill missing technical documentation, improving system clarity and long-term maintainability."
         ]
@@ -34,8 +34,8 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2023-02-01",
         endDate: "2025-05-31",
         responsibilities: [
-          "Led greenfield Salesforce implementations for financial-services clients, integrating core banking systems to bring member/account data into Salesforce for operational teams.",
-          "Designed and implemented a custom LWC-driven deal workflow that unified up to 4 teams per deal into a single execution model, reducing information processing time and cross-team coordination overhead by ~35% through role-specific self-service, targeted notifications, and shared Salesforce process flows.",
+          "Led greenfield Salesforce implementations for financial services clients, integrating core banking systems to bring member/account data into Salesforce for operational teams.",
+          "Designed and implemented a custom LWC-driven deal workflow that unified up to 4 teams per deal into a single execution model, reducing information processing time and cross-team coordination overhead by 35% through role-specific self-service, targeted notifications, and shared Salesforce process flows.",
           "Designed and implemented customer portals end to end from UI/UX design through delivery, increasing user self-service behavior and reducing communication friction and user frustration.",
           "Improved data availability in Salesforce through timely integration patterns and caching mechanisms that reduced external API callout dependence.",
           "Implemented a MuleSoft-centered integration service that improved data flow and enabled consolidation of two additional legacy services, delivering meaningful licensing and operational cost savings."
@@ -53,7 +53,7 @@ export const employmentData: EmploymentEntry[] = [
         responsibilities: [
           "Managed a 5-person Salesforce team (2 developers, 3 admins), leading roadmap execution, stakeholder alignment, and platform reliability across Deal Desk, Contracting, and Website initiatives.",
           "Partnered directly with cross-functional stakeholders to scope and prioritize solutions, ensuring sprint commitments mapped to high-impact business needs.",
-          "Improved production stability by hardening brittle legacy components and adding guardrails, reducing on-call incidents from 1-2 per week to ~1 every two weeks during tenure.",
+          "Improved production stability by hardening brittle legacy components and adding guardrails, reducing on-call incidents from 1-2 per week to 1 every two weeks during tenure.",
           "Maintained CI/CD pipeline reliability to support consistent biweekly sprint-end releases and minimize deployment disruption.",
           "Owned hiring for team expansion, interviewing and selecting 2 contractors to increase delivery capacity.",
           "Supported team growth and advancement by advocating for internal promotion, including progression of an admin to senior-level responsibilities, and mentoring an admin through a cross-functional transition into development work."
@@ -64,9 +64,9 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2020-08-01",
         endDate: "2022-06-30",
         responsibilities: [
-          "Built an LWC-based renewal terms interface with reactive calculations and workflow automation, enabling Deal Desk users to model custom deal structures while protecting profitability and reducing renewal configuration and approval time by ~40%.",
-          "Replaced a website integration service with an internally owned integration architecture, improving sync reliability and observability while saving ~$500K annually in licensing costs.",
-          "Designed and implemented an in-house contracting orchestration service to replace a third-party platform, delivering ~$1.5M in annual savings and improving contracting stability by reducing errors from 1-2 per week to 1-2 per month.",
+          "Built an LWC-based renewal terms interface with reactive calculations and workflow automation, enabling Deal Desk users to model custom deal structures while protecting profitability and reducing renewal configuration and approval time by 40%.",
+          "Replaced a website integration service with an internally owned integration architecture, improving sync reliability and observability while saving $500K annually in licensing costs.",
+          "Designed and implemented an in-house contracting orchestration service to replace a third-party platform, delivering$1.5M in annual savings and improving contracting stability by reducing errors from 1-2 per week to 1-2 per month.",
           "Served as team lead by unblocking technical issues, enforcing robust code review practices, and establishing coding standards to improve maintainability."
         ]
       }
