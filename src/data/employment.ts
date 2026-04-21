@@ -15,15 +15,13 @@ export const employmentData: EmploymentEntry[] = [
       {
         title: "Senior Salesforce Developer",
         startDate: "2025-06-01",
+        endDate: "2025-03-24",
         responsibilities: [
-          "Act as technical architect for business analysts and the development team",
-          "Translating business requirements into scalable solutions",
-          "Drive technical design for both feature development and larger initiatives, ensuring performance, scalability, and maintainability",
-          "Lead a distributed development team ensuring code quality and solution accuracy",
-          "Own system stability and architecture, proactively identifying and resolving risks",
-          "Establish and maintain technical documentation to support long-term system health",
-          "Enforce governance, security, and best practices across the development lifecycle",
-          "Encourage continuous improvement of engineering standards and code quality through iterative enhancements"
+          "Re-architected Feedback and Question form frameworks serving 1k+ users weekly to improve scalability and maintainability, cutting component load time by ~50% and making future form changes more reliable and faster to deliver.",
+          "Led security remediation design for community experiences by addressing 3 security findings in Q1 2026, involving LWC process control changes, and locking down Community profiles to reduce exposure for external and guest users.",
+          "Lead legacy Case trigger architecture redesign to bring modern practices, eliminating years of technical debt and increasing performance by ~80% during Case operations.",
+          "Served as technical architect across as many as 5 concurrent projects, partnering with 2 BAs and 1-2 developers per engagement to drive code quality and functional readiness prior to BA validation.",
+          "Built an AI-assisted codebase analysis workflow to infer and backfill missing technical documentation, improving system clarity and long-term maintainability."
         ]
       }
     ]
@@ -36,12 +34,11 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2023-02-01",
         endDate: "2025-05-31",
         responsibilities: [
-          "Provide Salesforce expertise to guide project requirements collection.",
-          "Translate technical requirements into effective solutions and designs using code, configuration, and integrations.",
-          "Collaborate with technical and non-technical teams to explain solutions in terms everyone can understand.",
-          "Draft technical documentation to facilitate communication between clients and delivery teams.",
-          "Provide input and assist in developing go-live plans that ensure clients’ success post-engagement.",
-          "Conduct demos to showcase the technical functionality being delivered."
+          "Led greenfield Salesforce implementations for financial-services clients, integrating core banking systems to bring member/account data into Salesforce for operational teams.",
+          "Designed and implemented a custom LWC-driven deal workflow that unified up to 4 teams per deal into a single execution model, reducing information processing time and cross-team coordination overhead by ~35% through role-specific self-service, targeted notifications, and shared Salesforce process flows.",
+          "Designed and implemented customer portals end to end from UI/UX design through delivery, increasing user self-service behavior and reducing communication friction and user frustration.",
+          "Improved data availability in Salesforce through timely integration patterns and caching mechanisms that reduced external API callout dependence.",
+          "Implemented a MuleSoft-centered integration service that improved data flow and enabled consolidation of two additional legacy services, delivering meaningful licensing and operational cost savings."
         ]
       }
     ]
@@ -54,11 +51,12 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2022-06-01",
         endDate: "2023-02-28",
         responsibilities: [
-          "Plan roadmaps for platform enhancements and prioritize stakeholder needs.",
-          "Work directly with stakeholders to define, prioritize, and scope projects.",
-          "Ensure timely project delivery by resolving blockers, providing clear guidance, and maintaining stakeholder communication.",
-          "Maintain development excellence by improving SDLC and CI/CD processes, conducting code reviews, monitoring systems, and triaging on-call issues.",
-          "Advocate for engaging team projects, prioritize tech debt mitigation, and promote team recognition and advancement."
+          "Managed a 5-person Salesforce team (2 developers, 3 admins), leading roadmap execution, stakeholder alignment, and platform reliability across Deal Desk, Contracting, and Website initiatives.",
+          "Partnered directly with cross-functional stakeholders to scope and prioritize solutions, ensuring sprint commitments mapped to high-impact business needs.",
+          "Improved production stability by hardening brittle legacy components and adding guardrails, reducing on-call incidents from 1-2 per week to ~1 every two weeks during tenure.",
+          "Maintained CI/CD pipeline reliability to support consistent biweekly sprint-end releases and minimize deployment disruption.",
+          "Owned hiring for team expansion, interviewing and selecting 2 contractors to increase delivery capacity.",
+          "Supported team growth and advancement by advocating for internal promotion, including progression of an admin to senior-level responsibilities, and mentoring an admin through a cross-functional transition into development work."
         ]
       },
       {
@@ -66,11 +64,10 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2020-08-01",
         endDate: "2022-06-30",
         responsibilities: [
-          "Design and implement tools that increase user independence.",
-          "Build integrations with both internal and external systems.",
-          "Investigate and resolve obscure issues in business automations.",
-          "Conduct research to identify and resolve cross-system data quality issues.",
-          "Ensure high code quality through rigorous code reviews and adherence to best practices."
+          "Built an LWC-based renewal terms interface with reactive calculations and workflow automation, enabling Deal Desk users to model custom deal structures while protecting profitability and reducing renewal configuration and approval time by ~40%.",
+          "Replaced a website integration service with an internally owned integration architecture, improving sync reliability and observability while saving ~$500K annually in licensing costs.",
+          "Designed and implemented an in-house contracting orchestration service to replace a third-party platform, delivering ~$1.5M in annual savings and improving contracting stability by reducing errors from 1-2 per week to 1-2 per month.",
+          "Served as team lead by unblocking technical issues, enforcing robust code review practices, and establishing coding standards to improve maintainability."
         ]
       }
     ]
@@ -83,14 +80,13 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2011-03-01",
         endDate: "2020-08-31",
         responsibilities: [
-          "Manage the full development life cycle of projects in the life sciences industry, including commercial pharmaceutical operations and patient programs.",
-          "Lead technical teams through full project development cycles spanning three to eighteen months and multiple phases.",
-          "Design and implement public and private-facing customer communities to drive user engagement, self-service functionality, and information distribution.",
-          "Manage and enhance multiple React+Redux web applications.",
-          "Develop data consolidation processes for synchronization and consumption.",
-          "Determine scope, effort, and timeline for project requirements.",
-          "Author documentation covering both the technical and administrative aspects of implemented solutions.",
-          "Work directly with clients to gather requirements, approve visual and technical designs, and showcase solutions."
+          "Led technical design and implementation for pharma commercial operations and customer portal initiatives, converting complex business requirements into scalable Salesforce solutions.",
+          "Delivered end-to-end technical execution across 3-18 month programs, including requirements analysis, solution design, implementation, and stakeholder validation.",
+          "Partnered directly with 2-5 business stakeholders per engagement to map processes and improve operational speed and data accuracy through system design.",
+          "Owned UI/UX design, implementation, and delivery of customer community experiences to support engagement, self-service, and structured information distribution.",
+          "Architected internal operations UX for the client portal initiative, producing full UI/UX designs that were implemented by engineering teams.",
+          "Built and enhanced a React sales tool that analyzed historical office product usage, improving targeting strategy and account-level sales planning quality.",
+          "Authored technical and administrative documentation to support implementation quality, handoff clarity, and long-term maintainability."
         ]
       }
     ]
@@ -103,8 +99,11 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2010-07-01",
         endDate: "2011-03-31",
         responsibilities: [
-          "Develop new apps and features that integrate directly with the website.",
-          "Maintain existing features, fix issues, and investigate crashes."
+          "Shipped Objective-C features and fixes in sync with web launches, using the Three20 framework and APIs tied to core site functionality.",
+          "Established the enterprise Apple developer account and distribution practices for internal and external app delivery.",
+          "Implement CI/CD for iPhone builds, including an internal webpage for distributing builds to the team, standardizing releases and reducing manual packaging overhead.",
+          "Triaged crash logs and prioritized fixes to improve app stability and reduce recurring production issues.",
+          "Implemented and coordinated push notifications with server engineers so mobile and backend behavior stayed aligned."
         ]
       },
       {
@@ -112,12 +111,12 @@ export const employmentData: EmploymentEntry[] = [
         startDate: "2008-06-01",
         endDate: "2010-07-31",
         responsibilities: [
-          "Test and verify live and preproduction web applications.",
-          "Evaluate user feedback for problems and potential enhancements.",
-          "Thoroughly vet new applications in development.",
-          "Maintain a catalog of known bugs and issues.",
-          "Compile recommendations for UI and UX adjustments.",
-          "Author and maintain testing documentation."
+          "Ran daily outbound email tests across providers to catch delivery, rendering, and integration issues before they reached users.",
+          "Owned QA for the Games section and reward flows, validating how games integrated with site-wide currency.",
+          "Tested new features in preproduction and production, documenting defects and working to protect release quality.",
+          "Reproduced complex bugs and defined clear replication paths so engineering could fix issues faster and with fewer round trips.",
+          "Authored and maintained testing scripts and documentation to support repeatable coverage and consistent test execution.",
+          "Translated user feedback and product behavior into UX recommendations and prioritized fixes alongside functional defects."
         ]
       }
     ]

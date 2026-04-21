@@ -30,7 +30,7 @@ export const skillData: SkillEntry[] = [
   },
   {
     type: "Tools",
-    skills: ["1Password", "ChatGPT", "Cursor", "Fork", "Illuminated Cloud", "IntelliJ", "Postman", "VSCode"]
+    skills: ["ChatGPT", "Claude Code", "Cursor", "Postman", "VSCode"]
   },
   {
     type: "Salesforce Clouds",
