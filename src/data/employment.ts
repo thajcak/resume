@@ -10,6 +10,20 @@ export interface EmploymentEntry {
 
 export const employmentData: EmploymentEntry[] = [
   {
+    company: "Swoop",
+    positions: [
+      {
+        title: "Senior GTM Engineer",
+        startDate: "2026-05-04",
+        responsibilities: [
+            "Own the Salesforce/GTM layer for the operations team, including opportunity management and segment-request UX, ensuring the platform reflects how GTM teams actually work.",
+            "Design and develop AI workflows to automate and improve go-to-market processes, adopting AI where the problem and payoff are clear.",
+            "Integrate Campaign Delivery, Billing, and operational data into Salesforce, improving data availability and reducing the need for teams to work outside the platform."
+        ]
+      }
+    ]
+  },
+  {
     company: "Epic Games",
     positions: [
       {
