@@ -16,7 +16,7 @@ export const employmentData: EmploymentEntry[] = [
         title: "Senior GTM Engineer",
         startDate: "2026-05-04",
         responsibilities: [
-            "Serve as technical owner of the GTM platform, designing the Segment Request process end to end and building a two-way integration with downstream systems to replace an ad hoc request pattern with a structured, repeatable workflow.",
+            "Serve as technical owner of the GTM platform, designing the Segment Request process end to end as well as the two-way integration with downstream systems to replace an ad hoc request pattern with a structured, repeatable workflow.",
             "Stand up Gearset-based CI/CD for the org, defining deployment, validation, and promotion processes and configuring automated backups and observability alerts that route error reporting into a dedicated Slack channel.",
             "Drive data model cleanup across the org, retiring unused metadata and legacy fields and rationalizing the Opportunity object, while supporting post-acquisition system integration to keep the platform consistent and maintainable.",
             "Strengthen platform access and security by managing integration-user permission sets, validating readiness for phishing-resistant MFA and passkeys, and standing up Okta SSO for sandboxes and Gearset, closing gaps in the org's authentication posture.",
