@@ -29,7 +29,7 @@ export const employmentData: EmploymentEntry[] = [
       {
         title: "Senior Salesforce Developer",
         startDate: "2025-06-01",
-        endDate: "2025-03-24",
+        endDate: "2026-03-24",
         responsibilities: [
           "Re-architected Feedback and Question form frameworks serving 2k+ users montly to improve scalability and maintainability, cutting component load time by 50% and making future form changes more reliable and faster to deliver.",
           "Led security remediation design for community experiences by addressing 3 security findings in Q1 2026, involving LWC process control changes, and locking down Community profiles to reduce exposure for external and guest users.",
