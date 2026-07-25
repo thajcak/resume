@@ -17,6 +17,19 @@ const path = require('path');
 const prettier = require('prettier');
 const App = require('../src/App').default;
 
+// The analytics script is only baked into the HTML for deploy builds. Local
+// builds leave the placeholder empty so test traffic never reaches analytics.
+const ANALYTICS_PLACEHOLDER = '<!-- ANALYTICS -->';
+const ANALYTICS_TAG =
+  '<script defer data-site="FHYZNUK" src="https://a.sleepypixel.monster/script.js"></script>';
+
+function analyticsEnabled() {
+  if (process.env.ENABLE_ANALYTICS) {
+    return process.env.ENABLE_ANALYTICS === 'true';
+  }
+  return false;
+}
+
 async function buildStatic() {
   // Generate static HTML
   const html = ReactDOMServer.renderToStaticMarkup(React.createElement(App));
@@ -40,8 +53,16 @@ async function buildStatic() {
     `<style>${globalCss}</style></head>`
   );
 
+  // Swap in the analytics tag, or strip the placeholder entirely
+  const includeAnalytics = analyticsEnabled();
+  const withAnalytics = withCss.replace(
+    ANALYTICS_PLACEHOLDER,
+    includeAnalytics ? ANALYTICS_TAG : ''
+  );
+  console.log(`Analytics script: ${includeAnalytics ? 'included' : 'omitted'}`);
+
   // Format HTML
-  const formattedHtml = await prettier.format(withCss, { parser: 'html' });
+  const formattedHtml = await prettier.format(withAnalytics, { parser: 'html' });
 
   // Ensure build directory exists
   await fs.ensureDir('./build');
