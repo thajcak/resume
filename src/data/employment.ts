@@ -10,11 +10,26 @@ export interface EmploymentEntry {
 
 export const employmentData: EmploymentEntry[] = [
   {
+    company: "Okta",
+    positions: [
+      {
+        title: "Principal Product Manager",
+        startDate: "2026-09-14",
+        responsibilities: [
+          "Leading product strategy for Auth0's Tenancy-as-a-Service offering, positioning the platform as the control layer B2B SaaS applications build tenancy on top of.",
+          "Owning organization lifecycle management at scale covering custom schemas, entitlements, and feature flagging.",
+          "Partnering with engineering, design, and the ISV ecosystem teams to turn complex identity and multi-tenancy challenges into roadmaps and shipped features."
+        ]
+      }
+    ]
+  },
+  {
     company: "Swoop",
     positions: [
       {
         title: "Senior GTM Engineer",
         startDate: "2026-05-04",
+        endDate: "2026-09-11",
         responsibilities: [
             "Serve as technical owner of the GTM platform, designing the Segment Request process end to end as well as the two-way integration with downstream systems to replace an ad hoc request pattern with a structured, repeatable workflow.",
             "Stand up Gearset-based CI/CD for the org, defining deployment, validation, and promotion processes and configuring automated backups and observability alerts that route error reporting into a dedicated Slack channel.",
